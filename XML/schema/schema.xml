@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2011/XMLSchema">
+
+<xs:element name="contact">
+    <xs:compleType>
+        <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="company" type="xs:string"/>
+        <xs:element name="phone" type="xs:int"/>
+        </xs:sequence>
+    </xs:compleType>
+</xs:element>
+</xs:schema>

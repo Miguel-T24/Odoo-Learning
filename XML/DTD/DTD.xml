@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<DTD>
+<!-- La declaracion de tipo documento XML, comunmente conocido como DTD, es una manera de describir lenguaje XML precisamente. Las DTD de vocabulario y la validez de la estructura de documentos XML contra las reglas gramaticales de lenguaje XML.
+
+Una DTD de xml Puede ser especificado dentro del documento, o puede ser mantenido en un documento separado y, a continuacion, me gusto por separado.
+ -->
+
+<!-- Sintaxis Basica de una DTD
+
+
+    <!DOCTYPE element DTD_identifier
+        [
+            declaration1
+            declaration2
+        ]>
+
+ -->
+
+
+<!-- 
+
+    - El  DTD comienza don <!DOCTYPE delimitador.
+    - Un elemento indica el analizador para el documento especificado en el elemento raiz
+    - DTD identificador es un identificador para la definicion de tipo de documento, que uede ser la ruta de accesso a un archivo del sistem o la direccion URL de un archivo en internet si el DTD esta apuntando a ruta externa, se llama subconjunto externop
+    - Los corchees [] adjuntar una lista opcional de declaracciones de ntiedades denominadas subconjunto interno.
+ -->
+
+<!-- 
+    DTD interna
+
+    Una DTD es referido como un DTD inertno si los elementos se declaran en los archivos XML.
+
+    Para conjsultar como DTD interna independiente del atributo de declaracion XML se debe establecer en si. Esto significa que la declaracion funcoina independiente de origen externo
+
+    sintaxis
+
+    <!DOCTYPE root-element [element-declarations]>
+
+    Ejemplo
+
+    DTD_interna.xml
+ -->
+
+
+ <!-- DTD Externa
+    
+    enDTD externo los elementos son declaradas fuera del arcchivo xml. se accede a ellas mediante la especificacion de las caracteristicas del sistema que puede ser el.dtd archivo legal ni una URL valida. Para consultar como DTD externo independientemente atributo en la declaracion incluye la informacion de la fuente externa.
+
+    sintaxis
+
+    <!DOCTYPE root-element SYSTEM "file-name">
+
+    donde el nombre de archivo es el archivo con .dtd extension.
+
+    ejemplo
+
+    xml_externo 
+  -->
+
+
+
+  <!-- Tipos
+    Se puede hacer referencia a un DTD externo mediante cualquiera de los sistemas o identificadores: los identificadores publicos.
+
+    Identificadores Sistemas
+
+    Un indetificador de sistema le permite especificar la ubicacion de un archivo externo que contiene las delcaraciones DTD. Sintaxis es la siguiente:
+
+    <!DOCTYPE name SYSTEM "address.dtd" [...]>
+
+    como puede ver, continene unan palabra clave y sistema URI  referencia apuntando a la ubicacion del documento.
+
+    Los identificadores publicos
+    Los identificadores publicos proporcionan un mecanismo para localizar recursos DTD y estan escritos como indica a continuacion:
+
+    <!DOCTYPE name PUBLIC "-//Beginning XML//DTD Address Example//EN"?
+
+    como puede ver, es que coimence con palabras clave public, seguido de un identificador. Los identificadores publicos se utilizan para identificar una entrada en un catalogo. Los identificadores publicos puede seguir cualquierf formato, sin embargo, comunmente se denomina formato los identificadores publicos FPIs.
+  
+   -->
+</DTD>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<curso_xml>
+    <alumno>
+        <nombre>Oscar</nombre>
+        <carrera generacion="2016">Ingenieria de Sistemas</carrera>
+        <matricula>654321</matricula>
+    </alumno>
+
+    <saludos>
+        <frase>Hola</frase>
+        <frase>como</frase>
+        <frase>estas</frase>
+    </saludos>
+
+    <!-- Special Character -->
+    <!-- Si es con un numero: ampersand numeral y luego el numero -->
+    <!-- &#64 -->
+    <!-- De lo contrario solo el ampersand -->
+    <!-- %lt -->
+    <!-- Se puede utilizar tambien en hexadecimal -->
+
+    <caracteres_especiales>
+        <char1>Arroba: &#64;</char1>
+        <char2>Menor que: &lt;</char2>
+        <char3>Mayor que: &gt;</char3>
+        <char4>Ampersand : &amp;</char4>
+        <char5>Comillas simples: &apos;</char5>
+        <char6>Comillas dobles: &quot;</char6>
+    </caracteres_especiales>
+
+
+    <!-- <![CDATA[Texto]] -->
+
+    <curso asisgnatura = "programacion">
+    <![CDATA[<Informacion> Trabajamos con < ,> y el & en el curso </informacion>]]>
+    \n
+    <alumno id= "001">
+        <nombre>Ana</nombre>
+        <calificacion examen ="1">10</calificacion>
+        <calificacion examen ="2">9.8</calificacion>
+        <calificacion examen ="3">10</calificacion>
+    </alumno>
+    <alumno id= "021">
+        <nombre>Luis</nombre>
+        <calificacion examen ="1">9</calificacion>
+        <calificacion examen ="2">10</calificacion>
+        <calificacion examen ="3">8</calificacion>
+    </alumno>
+</curso>
+
+<!-- 
+    Validacion
+
+    - Es el proceso con el que se valida un documento de xml
+    - Se dice que el documento es valido si sus contenidos estan de acuerdo con los elementos, atributos definidos en el document type declaration - DTD
+    - La validacion se lleva a cabo de dos formas
+        * Well-formed XML docuemnt - Documento bien formado
+        * Valid XML document - documento valido
+
+    - Si no usa DTD debe usar correctamente &, <,>,',"
+    - Todos los tags de apertura deben de tenber tag de cierre o incluir el cierre si no trabaja en pareja
+    - Tiene que tener un elemento raiz
+  -->
+
+  <!-- 
+    Instrucciones de Procesado
+
+    - Permiten que el documento tenga instrucciones para las aplicaciones.
+    - No forman parte de los datos del documento
+    - Pueden contener cualquier dato meno ?>
+    - <?target instruction?>
+        * Target - Identifica la aplicacion a la cual se le da la instruccion
+        * Instruction - la informacion que procesa la aplicacion
+    - <?xml-stylesheet href="misestilos.css" type="text/css"?>
+    - xml-stylesheet indica que se dirige al browser
+    - href y  type son las instrucciones.
+
+ -->
+</curso_xml>
